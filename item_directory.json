@@ -1,0 +1,26 @@
+[
+  {
+    "id": "item_001",
+    "name": "Rusty Dagger",
+    "rank": "E",
+    "type": "Weapon",
+    "stats": {"STR": 2},
+    "description": "A basic dagger for beginners."
+  },
+  {
+    "id": "item_002",
+    "name": "Health Potion",
+    "rank": "E",
+    "type": "Consumable",
+    "effect": "Restore 20 HP",
+    "description": "Heals minor wounds."
+  },
+  {
+    "id": "item_003",
+    "name": "Kamish's Wrath",
+    "rank": "S",
+    "type": "Weapon",
+    "stats": {"STR": 100, "AGI": 50},
+    "description": "The ultimate dagger made from a dragon's tooth."
+  }
+]

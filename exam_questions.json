@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Logic",
+    "difficulty": "E",
+    "question": "If you have 3 apples and you take away 2, how many apples do you have?",
+    "options": ["1", "2", "3", "0"],
+    "answer": "2",
+    "reward": {"xp": 50, "stats": {"INT": 1}}
+  },
+  {
+    "category": "Mathematics",
+    "difficulty": "D",
+    "question": "Solve for x: 2x + 5 = 15",
+    "options": ["5", "10", "15", "20"],
+    "answer": "5",
+    "reward": {"xp": 100, "stats": {"INT": 2}}
+  },
+  {
+    "category": "Lore",
+    "difficulty": "S",
+    "question": "Who is known as the Shadow Monarch?",
+    "options": ["Sung Jin-Woo", "Thomas Andre", "Go Gun-Hee", "Cha Hae-In"],
+    "answer": "Sung Jin-Woo",
+    "reward": {"xp": 5000, "stats": {"INT": 10, "AGI": 5}, "title": "Shadow Monarch Candidate"}
+  }
+]

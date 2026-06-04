@@ -3,7 +3,7 @@ from typing import Any, List, Optional
 from firebase_admin import initialize_app, firestore, db
 from google.cloud import firestore as google_firestore
 from fastapi import APIRouter, Request, Response, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 initialize_app()
 router = APIRouter()
@@ -35,7 +35,7 @@ class SkillUnlock(BaseModel):
 class StatAlloc(BaseModel):
     uid: str
     stat: str
-    points: int = 1
+    points: int = Field(1, gt=0)
 
 class Challenge(BaseModel):
     challenger_uid: str

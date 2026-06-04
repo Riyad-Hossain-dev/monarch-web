@@ -445,3 +445,15 @@ def test_allocate_stat_not_enough_points(mock_fs):
     resp = client.post("/allocate_stat", json={"uid": "u1", "stat": "VIT", "points": 5})
     assert resp.status_code == 400
     assert "Not enough" in resp.json()["error"]
+
+
+def test_allocate_stat_negative_points():
+    # Pydantic (Field gt=0) should catch this and return 422
+    resp = client.post("/allocate_stat", json={"uid": "u1", "stat": "INT", "points": -5})
+    assert resp.status_code == 422
+
+
+def test_allocate_stat_zero_points():
+    # Pydantic (Field gt=0) should catch this and return 422
+    resp = client.post("/allocate_stat", json={"uid": "u1", "stat": "INT", "points": 0})
+    assert resp.status_code == 422
